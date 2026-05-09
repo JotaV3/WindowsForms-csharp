@@ -28,25 +28,25 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.mainLabel = new System.Windows.Forms.Label();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.btnSecondForm = new System.Windows.Forms.Button();
             this.btnSecondFormThread = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // mainLabel
+            // lblTitle
             // 
-            this.mainLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mainLabel.Location = new System.Drawing.Point(12, 9);
-            this.mainLabel.Name = "mainLabel";
-            this.mainLabel.Size = new System.Drawing.Size(776, 125);
-            this.mainLabel.TabIndex = 0;
-            this.mainLabel.Text = "Principal";
-            this.mainLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(12, 9);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(776, 125);
+            this.lblTitle.TabIndex = 0;
+            this.lblTitle.Text = "Principal";
+            this.lblTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // btnSecondForm
             // 
             this.btnSecondForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSecondForm.Location = new System.Drawing.Point(19, 356);
+            this.btnSecondForm.Location = new System.Drawing.Point(176, 356);
             this.btnSecondForm.Name = "btnSecondForm";
             this.btnSecondForm.Size = new System.Drawing.Size(208, 72);
             this.btnSecondForm.TabIndex = 1;
@@ -57,7 +57,7 @@
             // btnSecondFormThread
             // 
             this.btnSecondFormThread.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSecondFormThread.Location = new System.Drawing.Point(259, 356);
+            this.btnSecondFormThread.Location = new System.Drawing.Point(416, 356);
             this.btnSecondFormThread.Name = "btnSecondFormThread";
             this.btnSecondFormThread.Size = new System.Drawing.Size(208, 72);
             this.btnSecondFormThread.TabIndex = 2;
@@ -72,7 +72,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnSecondFormThread);
             this.Controls.Add(this.btnSecondForm);
-            this.Controls.Add(this.mainLabel);
+            this.Controls.Add(this.lblTitle);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Formulário Principal";
@@ -82,7 +82,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label mainLabel;
+        private System.Windows.Forms.Label lblTitle;
         private System.Windows.Forms.Button btnSecondForm;
         private System.Windows.Forms.Button btnSecondFormThread;
     }

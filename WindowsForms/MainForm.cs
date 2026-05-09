@@ -22,8 +22,13 @@ namespace WindowsForms
         {
             Hide();
 
-            SecondForm secondForm = new SecondForm();
+            SecondForm secondForm = new SecondForm("Olá, Mundo!");
             secondForm.ShowDialog();
+
+            if(secondForm.Message != null)
+            {
+                lblTitle.Text = secondForm.Message;
+            }
 
             Show();
         }
