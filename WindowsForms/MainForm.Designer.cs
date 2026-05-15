@@ -38,10 +38,10 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.menuFileLeave = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuAbout = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuHelpAbout = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelpAboutDeveloper = new System.Windows.Forms.ToolStripMenuItem();
             this.menuHelpAboutVersion = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuComboBox = new System.Windows.Forms.ToolStripComboBox();
+            this.menuComboBoxLanguage = new System.Windows.Forms.ToolStripComboBox();
             this.menuTxtBox = new System.Windows.Forms.ToolStripTextBox();
             this.menu.SuspendLayout();
             this.SuspendLayout();
@@ -84,7 +84,7 @@
             this.menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuFile,
             this.menuHelp,
-            this.menuComboBox,
+            this.menuComboBoxLanguage,
             this.menuTxtBox});
             this.menu.Location = new System.Drawing.Point(0, 0);
             this.menu.Name = "menu";
@@ -108,67 +108,74 @@
             this.menuFileNew.Name = "menuFileNew";
             this.menuFileNew.Size = new System.Drawing.Size(180, 22);
             this.menuFileNew.Text = "Novo";
+            this.menuFileNew.Click += new System.EventHandler(this.menuFileNew_Click);
             // 
             // menuFileOpen
             // 
             this.menuFileOpen.Name = "menuFileOpen";
             this.menuFileOpen.Size = new System.Drawing.Size(180, 22);
             this.menuFileOpen.Text = "Abrir";
+            this.menuFileOpen.Click += new System.EventHandler(this.menuFileOpen_Click);
             // 
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(100, 6);
             // 
             // menuFileLeave
             // 
             this.menuFileLeave.Name = "menuFileLeave";
             this.menuFileLeave.Size = new System.Drawing.Size(180, 22);
             this.menuFileLeave.Text = "Sair";
+            this.menuFileLeave.Click += new System.EventHandler(this.menuFileLeave_Click);
             // 
             // menuHelp
             // 
             this.menuHelp.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.menuAbout});
+            this.menuHelpAbout});
             this.menuHelp.Name = "menuHelp";
             this.menuHelp.Size = new System.Drawing.Size(50, 23);
             this.menuHelp.Text = "Ajuda";
             // 
-            // menuAbout
+            // menuHelpAbout
             // 
-            this.menuAbout.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuHelpAbout.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.menuHelpAboutDeveloper,
             this.menuHelpAboutVersion});
-            this.menuAbout.Name = "menuAbout";
-            this.menuAbout.Size = new System.Drawing.Size(180, 22);
-            this.menuAbout.Text = "Sobre";
+            this.menuHelpAbout.Name = "menuHelpAbout";
+            this.menuHelpAbout.Size = new System.Drawing.Size(104, 22);
+            this.menuHelpAbout.Text = "Sobre";
             // 
             // menuHelpAboutDeveloper
             // 
             this.menuHelpAboutDeveloper.Name = "menuHelpAboutDeveloper";
-            this.menuHelpAboutDeveloper.Size = new System.Drawing.Size(180, 22);
+            this.menuHelpAboutDeveloper.Size = new System.Drawing.Size(152, 22);
             this.menuHelpAboutDeveloper.Text = "Desenvolvedor";
+            this.menuHelpAboutDeveloper.Click += new System.EventHandler(this.menuHelpAboutDeveloper_Click);
             // 
             // menuHelpAboutVersion
             // 
             this.menuHelpAboutVersion.Name = "menuHelpAboutVersion";
-            this.menuHelpAboutVersion.Size = new System.Drawing.Size(180, 22);
+            this.menuHelpAboutVersion.Size = new System.Drawing.Size(152, 22);
             this.menuHelpAboutVersion.Text = "Versão";
+            this.menuHelpAboutVersion.Click += new System.EventHandler(this.menuHelpAboutVersion_Click);
             // 
-            // menuComboBox
+            // menuComboBoxLanguage
             // 
-            this.menuComboBox.Items.AddRange(new object[] {
+            this.menuComboBoxLanguage.Items.AddRange(new object[] {
             "Português",
             "Inglês"});
-            this.menuComboBox.Name = "menuComboBox";
-            this.menuComboBox.Size = new System.Drawing.Size(121, 23);
-            this.menuComboBox.Text = "Idioma";
+            this.menuComboBoxLanguage.Name = "menuComboBoxLanguage";
+            this.menuComboBoxLanguage.Size = new System.Drawing.Size(121, 23);
+            this.menuComboBoxLanguage.Text = "Idioma";
+            this.menuComboBoxLanguage.SelectedIndexChanged += new System.EventHandler(this.menuComboBoxLanguage_SelectedIndexChanged);
             // 
             // menuTxtBox
             // 
             this.menuTxtBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.menuTxtBox.Name = "menuTxtBox";
             this.menuTxtBox.Size = new System.Drawing.Size(100, 23);
+            this.menuTxtBox.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.menuTxtBox_KeyPress);
             // 
             // MainForm
             // 
@@ -202,10 +209,10 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem menuFileLeave;
         private System.Windows.Forms.ToolStripMenuItem menuHelp;
-        private System.Windows.Forms.ToolStripMenuItem menuAbout;
+        private System.Windows.Forms.ToolStripMenuItem menuHelpAbout;
         private System.Windows.Forms.ToolStripMenuItem menuHelpAboutDeveloper;
         private System.Windows.Forms.ToolStripMenuItem menuHelpAboutVersion;
-        private System.Windows.Forms.ToolStripComboBox menuComboBox;
+        private System.Windows.Forms.ToolStripComboBox menuComboBoxLanguage;
         private System.Windows.Forms.ToolStripTextBox menuTxtBox;
     }
 }
